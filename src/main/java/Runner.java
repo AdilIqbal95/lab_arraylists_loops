@@ -31,8 +31,7 @@ public class Runner {
 //        7. Print the number of islands in your arraylist
         System.out.println(scottishIslands.size());
 //        8. Sort the list alphabetically
-        Collections.sort(scottishIslands); // Easy method
-//        TODO - Using Algorithm
+        Collections.sort(scottishIslands);
 //        9. Print out all the islands using a for loop
         for (String island: scottishIslands) {
             System.out.println(island);
@@ -53,7 +52,7 @@ public class Runner {
             }
         }
 //        2. Print the difference between the largest and smallest value
-        System.out.println("Difference between largest and smallest value: " + (numbers.get(10) - numbers.get(0))); // TODO - Using algorithm
+        System.out.println("Difference between largest and smallest value: " + (numbers.get(10) - numbers.get(0)));
 //        3. Print True if the list contains a 1 next to a 1 somewhere.
         for (int i = 0; i < numbers.size(); i++) {
             if ((numbers.get(i) == 1) && (numbers.get(++i) == 1)) {
@@ -74,7 +73,6 @@ public class Runner {
 //
 //          So [2, 7, 13, 2] would have sum of 9.
 
-//        Method 1
         int sum2 = 0;
 
         for (int i = 0; i < numbers.indexOf(13); i++) {
